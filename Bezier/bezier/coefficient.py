@@ -6,7 +6,7 @@ Created on 2018年2月25日
 '''
 
 from Bezier.curve_math.factoral import factoral,power
-
+from Bezier import *
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -25,11 +25,24 @@ def bersizer(i,n,u):
     return c*u1*u2
 
 def Bersizer(i,n):
-    x = np.linspace(0, 1, 100)
+    x = np.linspace(STARTU, ENDU, GLOBALOFFSETNUM)
     y = [bersizer(i, n, u) for u in x]
     return (x,y)
 
-    
+def bersizerDerivative(i,n,u):
+    firstNum = 0
+    secondNum = 0
+    if i != 0:
+        firstNum = bersizer(i-1, n-1, u)
+    if i != n:
+        secondNum = bersizer(i, n-1, u)
+    return n*(firstNum - secondNum) 
+
+def BersizerDerivative(i,n):
+    x = np.linspace(STARTU, ENDU, GLOBALOFFSETNUM)
+    y = [bersizerDerivative(i, n, u) for u in x]
+    return (x,y)
+
 def drawBersizer(i,n):
     x,y = Bersizer(i, n)
     plt.plot(x, y) 
@@ -44,5 +57,20 @@ def drawOnOneFig(n):
     plt.plot(*res)
     plt.show()
 
+def drawBersizerDerivative(i,n):
+    x,y = BersizerDerivative(i, n)
+    plt.plot(x, y) 
+    plt.show()
+    
+def drawBersizerDerivativeOnOneFig(n):
+    res = []
+    for i in range(n+1):
+        x,y = BersizerDerivative(i, n)
+        res.append(x)
+        res.append(y)
+    plt.plot(*res)
+    plt.show()
+
 if __name__ == "__main__":
-    drawOnOneFig(9)
+    drawOnOneFig(10)
+    drawBersizerDerivativeOnOneFig(3)
