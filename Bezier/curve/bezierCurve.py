@@ -42,8 +42,8 @@ def drawBesizeCurve(x,y,controlPoints =None, controlPoint = False,controlLine = 
     plt.show()
 
 if __name__ == "__main__":
-    x = [1,10,15]
-    y = [2,20,15]
-    n = 2
+    x = [1,10,15,20]
+    y = [2,20,15,20]
+    n = 3
     resx,resy = calCurvePoint(x, y, n)
     drawBesizeCurve(resx,resy,(x,y),True,True)
