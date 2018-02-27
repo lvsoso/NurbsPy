@@ -10,3 +10,5 @@ I use python implement nurbs curve and surface, because python is simple and don
 `pip install matplotlib`
 
 `pip install numpy`
+
+[Pydev](https://dl.bintray.com/fabioz/pydev/6.2.0/)
