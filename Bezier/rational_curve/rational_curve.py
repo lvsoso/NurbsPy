@@ -6,8 +6,7 @@ Created on 2018年2月27日
 '''
 
 import numpy as np  
-import matplotlib.pyplot as plt  
-import mpl_toolkits.mplot3d
+import matplotlib.pyplot as plt
 from Bezier import *
 from Bezier.curve_math.factoral import power
 # x,y=np.mgrid[-2:2:20j,-2:2:20j]  
@@ -18,7 +17,7 @@ from Bezier.curve_math.factoral import power
 # ax.set_xlabel('x')  
 # ax.set_ylabel('y')  
 # ax.set_zlabel('z')  
-#   
+#    
 # plt.show()  
 
 def unitCircle():
@@ -31,6 +30,6 @@ def drawUnitCircle():
     x,y = unitCircle()
     plt.plot(x,y)
     plt.show()
-    
+
 if __name__ == "__main__":
     drawUnitCircle()

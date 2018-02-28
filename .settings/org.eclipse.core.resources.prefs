@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
 encoding//Bezier/bezier/coefficient.py=UTF-8
 encoding//Bezier/curve/bezierCurve.py=UTF-8
+encoding//Bezier/curve_math/factoral.py=UTF-8
+encoding//Bezier/curve_math/matrix.py=UTF-8
+encoding//Bezier/rational_besizer/rational_besizer.py=UTF-8
 encoding//Bezier/rational_curve/rational_curve.py=UTF-8

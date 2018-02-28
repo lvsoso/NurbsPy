@@ -8,6 +8,7 @@ from Bezier.bezier.coefficient import Bersizer
 
 import matplotlib.pyplot as plt
 import numpy as np
+from Bezier.curve_math.matrix import convertBMToArr
 
 def BersizerMatrix(n):
     res = []
@@ -15,9 +16,6 @@ def BersizerMatrix(n):
         _,y = Bersizer(i, n)
         res.append(y)
     return res
-
-def convertBMToArr(bm):
-    return np.array(bm)
 
 def calCurvePoint(x,y,n):
     bm = BersizerMatrix(n)
