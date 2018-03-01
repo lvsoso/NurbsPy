@@ -4,9 +4,9 @@
 I am learning how to build CAD model, I want to record some code that I study.
 
 ## Why Using Python
-I use python implement nurbs curve and surface, because python is simple and don't configure third libraries.
+I use python implement nurbs curve and surface, because python is simple and don't need configure third libraries.
 
-## Third Librarie
+## Third Libraries
 `pip install matplotlib`
 
 `pip install numpy`

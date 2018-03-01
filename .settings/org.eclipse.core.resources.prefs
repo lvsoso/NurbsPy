@@ -5,3 +5,5 @@ encoding//Bezier/curve_math/factoral.py=UTF-8
 encoding//Bezier/curve_math/matrix.py=UTF-8
 encoding//Bezier/rational_besizer/rational_besizer.py=UTF-8
 encoding//Bezier/rational_curve/rational_curve.py=UTF-8
+encoding//matplotlib_tutorials/draw3d/contourf3d.py=UTF-8
+encoding//matplotlib_tutorials/draw3d/wire3d.py=UTF-8
